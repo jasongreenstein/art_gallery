@@ -1,8 +1,5 @@
 .venv/
 __pycache__/
 db.sqlite3
-images\hatching_FK.png
-images\monarchs.png
-images\polar_rose.gif
-images\target_dee.png
-images\target_portrait.png
+/static/images/*.png
+/static/images/*.gif

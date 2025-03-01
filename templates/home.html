@@ -1,7 +1,24 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-<div>
-    <p>"HOME PAGE</p>
-</div>
+  <!-- Photo Grid -->
+  <div class="w3-row">
+    <div class="w3-half">
+      <img src="{% static 'images/target_portrait.png' %}" style="width:100%">
+      <img src="{% static 'images/polar_rose.gif' %}" style="width:100%">
+      <img src="{% static 'images/monarchs.png' %}" style="width:100%">
+    </div>
+
+    <div class="w3-half">
+      <img src="{% static 'images/target_dee.png' %}" style="width:100%">
+      <img src="{% static 'images/hatching_FK.png' %}" style="width:100%">
+    </div>
+  </div>
+  
+<!-- Footer / About Section -->
+<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+    <h2>About</h2>
+    <h3>Jason Greenstein is from San Diego. He loves making maps and art.</h3>
+</footer>  
 {% endblock content %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <!-- Photo Grid -->
+  <div class="w3-row">
+    <!-- Images (Series) -->
+    <img src="{% static 'images/pie.gif' %}" width="1000" height="500">
+    <img src="{% static 'images/pie.gif' %}" width="1000" height="500">
+    <img src="{% static 'images/pie.gif' %}" width="1000" height="500">
+    <img src="{% static 'images/pie.gif' %}" width="1000" height="500">
+    <img src="{% static 'images/pie.gif' %}" width="1000" height="500">
+  </div>
+  
+<!-- Footer / About Section -->
+<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+    <h2>About</h2>
+    <h3>Jason Greenstein is from San Diego. He loves making maps and art.</h3>
+</footer>  
+{% endblock content %}

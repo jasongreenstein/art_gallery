@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <div class="w3-row">
+    <!-- Images (Series) -->
+    {% for art in object_list %}
+    <img src="{{ art.image.url }}" alt="{{art.title}}" width="100%"/>
+    {% endfor %}
+  </div>
+{% endblock content %}

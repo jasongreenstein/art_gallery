@@ -5,9 +5,7 @@
   <!-- Photo Grid -->
   <div class="w3-row">
     {% for art in object_list %}
-    <!-- <img src="{{ art.image.url }}" alt="{{art.title}}" width="100%"/> -->
-     <!-- <p>{{ art }}</p> -->
-     <a href="{% url 'art_in_series' art %}">{{ art }}</a>
+    <img src="{{ art.image.url }}" alt="{{art.title}}" width="100%"/>
     {% endfor %}
   </div>
   
